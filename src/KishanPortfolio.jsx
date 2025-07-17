@@ -4,7 +4,12 @@ export default function KishanPortfolio() {
   return (
     <div className="min-h-screen bg-gray-950 text-white px-6 py-10 space-y-16">
       {/* Header */}
-      <header className="text-center space-y-2">
+      <header className="text-center space-y-4">
+        <img
+          src="/profile.jpg"
+          alt="Kishan Katwe"
+          className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-white"
+        />
         <h1 className="text-4xl font-bold">Kishan Katwe</h1>
         <p className="text-lg text-gray-400">
           Unity Game Developer | Gameplay • UI/UX • Tools
@@ -86,9 +91,14 @@ export default function KishanPortfolio() {
             link: "https://github.com/kkatwe07/Laser-Defender",
           },
         ].map((project) => (
-          <div key={project.title} className="bg-gray-900 border border-gray-700 p-4 rounded-lg">
+          <div
+            key={project.title}
+            className="bg-gray-900 border border-gray-700 p-4 rounded-lg"
+          >
             <h3 className="text-xl font-semibold">{project.title}</h3>
-            <p className="text-gray-400 text-sm mt-1 mb-3">{project.description}</p>
+            <p className="text-gray-400 text-sm mt-1 mb-3">
+              {project.description}
+            </p>
             <a
               href={project.link}
               target="_blank"
@@ -108,10 +118,33 @@ export default function KishanPortfolio() {
           Feel free to reach out to me — I'm open to opportunities and collaborations.
         </p>
         <div className="flex justify-center gap-4 flex-wrap text-sm text-gray-400">
-          <span>[Email Placeholder]</span>
-          <span>[LinkedIn Placeholder]</span>
-          <span>[GitHub Placeholder]</span>
-          <span>[Resume Link Placeholder]</span>
+          <a
+            href="mailto:kishan.r.katwe.work@gmail.com"
+            className="hover:underline"
+          >
+            kishan.r.katwe.work@gmail.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kk7-02"
+            target="_blank"
+            className="hover:underline"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/kkatwe07"
+            target="_blank"
+            className="hover:underline"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://kishan-katwe.itch.io/"
+            target="_blank"
+            className="hover:underline"
+          >
+            Itch.io
+          </a>
         </div>
       </section>
     </div>
