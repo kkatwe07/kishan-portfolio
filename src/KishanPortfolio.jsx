@@ -1,9 +1,4 @@
-// Kishan Katwe Portfolio - React + Tailwind
-// To deploy this: I'll guide you once this is confirmed.
-
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 export default function KishanPortfolio() {
   return (
@@ -91,19 +86,18 @@ export default function KishanPortfolio() {
             link: "https://github.com/kkatwe07/Laser-Defender",
           },
         ].map((project) => (
-          <Card key={project.title} className="bg-gray-900 border-gray-700">
-            <CardContent className="py-4">
-              <h3 className="text-xl font-semibold">{project.title}</h3>
-              <p className="text-gray-400 text-sm mt-1 mb-2">{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button variant="secondary">View Project</Button>
-              </a>
-            </CardContent>
-          </Card>
+          <div key={project.title} className="bg-gray-900 border border-gray-700 p-4 rounded-lg">
+            <h3 className="text-xl font-semibold">{project.title}</h3>
+            <p className="text-gray-400 text-sm mt-1 mb-3">{project.description}</p>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm"
+            >
+              View Project
+            </a>
+          </div>
         ))}
       </section>
 
