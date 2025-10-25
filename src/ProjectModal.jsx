@@ -135,11 +135,11 @@ export default function ProjectModal({ project, isOpen, onClose, onPrev, onNext,
                 >
                   {/* Project Header */}
                   <div className="text-center mb-6">
-                    <h2 className="text-4xl font-bold mb-2 text-white">
+                    <h2 className="text-3xl font-bold mb-2 text-white tracking-tight">
                       {project.title}
                     </h2>
                     <div className="flex items-center justify-center gap-2 mb-2">
-                      <span className="text-blue-300 text-base font-semibold">
+                      <span className="text-blue-300 text-sm font-semibold tracking-wide">
                         {project.title === "Mine Rescue" && "Longbow Games"}
                         {project.title === "BattleBay" && "Longbow Games"}
                         {project.title === "Yoga Quest" && "Longbow Games"}
@@ -147,7 +147,7 @@ export default function ProjectModal({ project, isOpen, onClose, onPrev, onNext,
                         {project.title === "Laser Defender" && "Personal Project"}
                       </span>
                     </div>
-                    <p className="text-gray-300 text-base font-medium">
+                    <p className="text-gray-300 text-sm font-medium tracking-wide">
                       {project.title === "Mine Rescue" && "Mobile Puzzle Game • Unity • Firebase"}
                       {project.title === "BattleBay" && "Multiplayer Battle Arena • Unity • CI/CD"}
                       {project.title === "Yoga Quest" && "Match-3 Game • Unity • Zenject"}
@@ -156,7 +156,7 @@ export default function ProjectModal({ project, isOpen, onClose, onPrev, onNext,
                     </p>
                   </div>
                   
-                  <p className="text-gray-300 mb-6 text-center text-xl leading-relaxed">
+                  <p className="text-gray-300 mb-6 text-center text-lg leading-relaxed font-light">
                     {project.description}
                   </p>
                 </motion.div>
@@ -168,9 +168,9 @@ export default function ProjectModal({ project, isOpen, onClose, onPrev, onNext,
                   transition={{ delay: 0.2, duration: 0.3 }}
                   className="mb-6"
                 >
-                  <h3 className="text-2xl font-semibold mb-3 text-center text-white">Key Contributions</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-center text-white tracking-tight">Key Contributions</h3>
                   <div className="bg-gray-800 rounded-lg p-4 border border-gray-700">
-                    <div className="text-base text-gray-400">
+                    <div className="text-sm text-gray-400 font-light leading-relaxed">
                       <div className="font-semibold text-yellow-400 mb-2">Technical Achievements:</div>
                       <ul className="list-disc list-inside space-y-1">
                         {project.title === "Mine Rescue" && (
@@ -225,7 +225,7 @@ export default function ProjectModal({ project, isOpen, onClose, onPrev, onNext,
                   transition={{ delay: 0.25, duration: 0.3 }}
                   className="mb-6"
                 >
-                  <h3 className="text-2xl font-semibold mb-3 text-center text-white">Technologies Used</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-center text-white tracking-tight">Technologies Used</h3>
                   <div className="flex flex-wrap gap-2 justify-center">
                     {project.title === "Mine Rescue" && (
                       <>
@@ -281,7 +281,7 @@ export default function ProjectModal({ project, isOpen, onClose, onPrev, onNext,
                     transition={{ delay: 0.3, duration: 0.3 }}
                     className="mb-6"
                   >
-                    <h3 className="text-2xl font-semibold mb-3 text-center text-white">Project Gallery</h3>
+                    <h3 className="text-xl font-semibold mb-3 text-center text-white tracking-tight">Project Gallery</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                       {allMedia.map((media, i) => (
                         <motion.div
@@ -343,7 +343,7 @@ export default function ProjectModal({ project, isOpen, onClose, onPrev, onNext,
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-gradient-to-r from-green-600 to-teal-600 text-white px-8 py-3 rounded-full font-semibold hover:from-green-500 hover:to-teal-500 transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
+                    className="inline-block bg-gradient-to-r from-green-600 to-teal-600 text-white px-8 py-3 rounded-full font-semibold hover:from-green-500 hover:to-teal-500 transition-all duration-300 transform hover:scale-105 shadow-lg text-base tracking-wide"
                   >
                     View Project
                   </a>

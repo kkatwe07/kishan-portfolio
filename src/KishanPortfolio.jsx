@@ -173,13 +173,13 @@ export default function KishanPortfolio() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
             Kishan Katwe
           </h1>
-          <div className="text-2xl text-blue-300 font-semibold mt-2">
+          <div className="text-xl text-blue-300 font-semibold mt-2 tracking-wide">
             Unity Game Developer
           </div>
-          <div className="text-xl text-gray-300 mt-1">
+          <div className="text-lg text-gray-300 mt-1 font-light tracking-wider">
             Associate Software Engineer at Longbow Games
           </div>
         </motion.div>
@@ -192,14 +192,14 @@ export default function KishanPortfolio() {
           transition={{ delay: 0.5, duration: 0.6 }}
         >
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-white mb-4">
+            <h1 className="text-3xl font-bold text-white mb-4 tracking-tight">
               Hi, I'm <span className="text-blue-400">Kishan</span>
             </h1>
-            <p className="text-2xl text-gray-300 leading-relaxed mb-4">
+            <p className="text-xl text-gray-300 leading-relaxed mb-4 font-light">
               A <span className="text-blue-400 font-semibold">Unity Developer</span> with 2+ years of experience 
               building polished mobile & live-ops games. I love turning game ideas into smooth, engaging player experiences.
             </p>
-            <p className="text-gray-400 text-base">
+            <p className="text-gray-400 text-sm font-medium tracking-wide">
               Currently working as Associate Software Engineer at Longbow Games
             </p>
           </div>
@@ -297,7 +297,7 @@ export default function KishanPortfolio() {
         transition={{ duration: 0.8 }}
       >
         <motion.h2 
-          className="text-4xl font-bold text-center mb-8 text-white"
+          className="text-3xl font-bold text-center mb-8 text-white tracking-tight"
         >
           Skills & Technologies
         </motion.h2>
@@ -325,12 +325,12 @@ export default function KishanPortfolio() {
               viewport={{ once: true }}
               transition={{ delay: categoryIndex * 0.2, duration: 0.6 }}
             >
-              <h3 className="text-xl font-semibold text-blue-400 mb-4">{category.category}</h3>
+              <h3 className="text-lg font-semibold text-blue-400 mb-4 tracking-wide">{category.category}</h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
                   <span
                     key={skill}
-                    className="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-base"
+                    className="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-sm font-medium tracking-wide"
                   >
                     {skill}
                   </span>
@@ -357,10 +357,10 @@ export default function KishanPortfolio() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl font-bold text-white mb-2">
+          <h2 className="text-3xl font-bold text-white mb-2 tracking-tight">
             Projects
           </h2>
-          <p className="text-gray-400 text-xl">
+          <p className="text-gray-400 text-lg font-light tracking-wide">
             Professional and personal game development projects
           </p>
         </motion.div>
@@ -438,11 +438,11 @@ export default function KishanPortfolio() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1, duration: 0.4 }}
                 >
-                  <h3 className="text-4xl font-bold mb-2 text-white">
+                  <h3 className="text-3xl font-bold mb-2 text-white tracking-tight">
                     {projects[current].title}
                   </h3>
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="text-blue-300 text-base font-semibold">
+                    <span className="text-blue-300 text-sm font-semibold tracking-wide">
                       {projects[current].title === "Mine Rescue" && "Longbow Games"}
                       {projects[current].title === "BattleBay" && "Longbow Games"}
                       {projects[current].title === "Yoga Quest" && "Longbow Games"}
@@ -450,7 +450,7 @@ export default function KishanPortfolio() {
                       {projects[current].title === "Laser Defender" && "Personal Project"}
                     </span>
                   </div>
-                  <p className="text-gray-300 text-base font-medium">
+                  <p className="text-gray-300 text-sm font-medium tracking-wide">
                     {projects[current].title === "Mine Rescue" && "Mobile Puzzle Game • Unity • Firebase"}
                     {projects[current].title === "BattleBay" && "Multiplayer Battle Arena • Unity • CI/CD"}
                     {projects[current].title === "Yoga Quest" && "Match-3 Game • Unity • Zenject"}
@@ -461,7 +461,7 @@ export default function KishanPortfolio() {
                 
                 {/* Project Description */}
                 <motion.div 
-                  className="text-gray-300 text-lg mb-6 leading-relaxed"
+                  className="text-gray-300 text-base mb-6 leading-relaxed font-light"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, duration: 0.4 }}
@@ -469,7 +469,7 @@ export default function KishanPortfolio() {
                   <p className="mb-3">
                     {projects[current].description}
                   </p>
-                  <div className="text-base text-gray-400">
+                  <div className="text-sm text-gray-400 font-light leading-relaxed">
                     <div className="font-semibold text-yellow-400 mb-1">Key Contributions:</div>
                     <ul className="list-disc list-inside space-y-1">
                       {projects[current].title === "Mine Rescue" && (
@@ -732,71 +732,45 @@ export default function KishanPortfolio() {
             viewport={{ once: true }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-2xl font-bold text-white mb-4 tracking-tight">
               Let's Connect
             </h2>
-            <p className="text-gray-300 text-xl mb-6">
+            <p className="text-gray-300 text-lg mb-6 font-light tracking-wide leading-relaxed">
               I'm always excited to work on new challenges and create amazing gaming experiences.
             </p>
             
-            {/* Contact Buttons */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              {[
-                { 
-                  href: "mailto:kishan.r.katwe.work@gmail.com", 
-                  text: "Email", 
-                  desc: "Get in touch",
-                  color: "from-green-500 to-emerald-500",
-                  icon: "📧"
-                },
-                { 
-                  href: "https://www.linkedin.com/in/kk7-02", 
-                  text: "LinkedIn", 
-                  desc: "View Profile",
-                  color: "from-blue-500 to-cyan-500",
-                  icon: "💼"
-                },
-                { 
-                  href: "/Kishan_Katwe_Resume.pdf", 
-                  text: "Resume", 
-                  desc: "Download PDF",
-                  color: "from-purple-500 to-indigo-500",
-                  icon: "💾"
-                }
-              ].map((link, index) => (
-                <motion.a
-                  key={link.text}
-                  href={link.href}
-                  target={link.href.startsWith('http') ? "_blank" : undefined}
-                  rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
-                  download={link.href.includes('.pdf') ? true : undefined}
-                  className={`bg-gradient-to-r ${link.color} text-white p-4 rounded-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-white/20`}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.6 + index * 0.1, type: "spring", stiffness: 200 }}
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <div className="text-xl mb-1">{link.icon}</div>
-                  <div className="text-xl">{link.text}</div>
-                  <div className="text-base opacity-90">{link.desc}</div>
-                </motion.a>
-              ))}
+            {/* Main Contact Button - Resume Only */}
+            <div className="flex justify-center mb-6">
+              <motion.a
+                href="/Kishan_Katwe_Resume.pdf"
+                download={true}
+                className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-white/20 inline-flex items-center gap-3"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.6, type: "spring", stiffness: 200 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <div className="text-lg">💾</div>
+                <div className="text-lg font-semibold tracking-wide">Download Resume</div>
+              </motion.a>
             </div>
             
             {/* Additional Contact Options */}
             <div className="flex justify-center gap-4 flex-wrap">
               {[
+                { href: "mailto:kishan.r.katwe.work@gmail.com", text: "Email", color: "hover:bg-green-600" },
+                { href: "https://www.linkedin.com/in/kk7-02", text: "LinkedIn", color: "hover:bg-blue-600" },
                 { href: "https://github.com/kkatwe07", text: "GitHub", color: "hover:bg-gray-700" },
                 { href: "https://kishan-katwe.itch.io/", text: "Itch.io", color: "hover:bg-orange-600" }
               ].map((link, index) => (
                 <motion.a
                   key={link.text}
                   href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 ${link.color} text-base`}
+                  target={link.href.startsWith('http') ? "_blank" : undefined}
+                  rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                  className={`bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 ${link.color} text-sm tracking-wide`}
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
@@ -810,7 +784,7 @@ export default function KishanPortfolio() {
             </div>
             
             <motion.div 
-              className="mt-6 text-gray-400 text-base"
+              className="mt-6 text-gray-400 text-sm font-light tracking-wide"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
