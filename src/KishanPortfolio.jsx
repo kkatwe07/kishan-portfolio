@@ -451,11 +451,11 @@ export default function KishanPortfolio() {
                     </span>
                   </div>
                   <p className="text-gray-300 text-base font-medium">
-                    {projects[current].title === "Mine Rescue" && "Mobile Puzzle Game • Unity + Firebase"}
-                    {projects[current].title === "BattleBay" && "Multiplayer Battle Arena • Unity + CI/CD"}
-                    {projects[current].title === "Yoga Quest" && "Match-3 Wellness Game • Unity + Zenject"}
-                    {projects[current].title === "Survive The Dead" && "Zombie Survival FPS • Unity + AI"}
-                    {projects[current].title === "Laser Defender" && "Classic Space Shooter • Unity + 2D Physics"}
+                    {projects[current].title === "Mine Rescue" && "Mobile Puzzle Game • Unity • Firebase"}
+                    {projects[current].title === "BattleBay" && "Multiplayer Battle Arena • Unity • CI/CD"}
+                    {projects[current].title === "Yoga Quest" && "Match-3 Game • Unity • Zenject"}
+                    {projects[current].title === "Survive The Dead" && "Zombie Survival FPS • Unity • Navmesh"}
+                    {projects[current].title === "Laser Defender" && "Classic Space Shooter • Unity • 2D Physics"}
                   </p>
                 </motion.div>
                 
@@ -528,7 +528,6 @@ export default function KishanPortfolio() {
                       <span className="bg-blue-600 px-3 py-1 rounded-full text-sm font-semibold">💻 Unity</span>
                       <span className="bg-green-600 px-3 py-1 rounded-full text-sm font-semibold">🎮 C#</span>
                       <span className="bg-orange-600 px-3 py-1 rounded-full text-sm font-semibold">🔥 Firebase</span>
-                      <span className="bg-purple-600 px-3 py-1 rounded-full text-sm font-semibold">📊 GameAnalytics</span>
                       <span className="bg-pink-600 px-3 py-1 rounded-full text-sm font-semibold">✨ UI/UX</span>
                     </>
                   )}
@@ -538,7 +537,6 @@ export default function KishanPortfolio() {
                       <span className="bg-green-600 px-3 py-1 rounded-full text-sm font-semibold">🎮 C#</span>
                       <span className="bg-yellow-600 px-3 py-1 rounded-full text-sm font-semibold">🚀 Jenkins</span>
                       <span className="bg-indigo-600 px-3 py-1 rounded-full text-sm font-semibold">⚡ CI/CD</span>
-                      <span className="bg-cyan-600 px-3 py-1 rounded-full text-sm font-semibold">🎪 PlayFab</span>
                     </>
                   )}
                   {projects[current].title === "Yoga Quest" && (
@@ -554,7 +552,7 @@ export default function KishanPortfolio() {
                     <>
                       <span className="bg-blue-600 px-3 py-1 rounded-full text-sm font-semibold">💻 Unity</span>
                       <span className="bg-green-600 px-3 py-1 rounded-full text-sm font-semibold">🎮 C#</span>
-                      <span className="bg-red-600 px-3 py-1 rounded-full text-sm font-semibold">🤖 AI</span>
+                      <span className="bg-red-600 px-3 py-1 rounded-full text-sm font-semibold">🤖 Enemy AI</span>
                       <span className="bg-purple-600 px-3 py-1 rounded-full text-sm font-semibold">🎯 FPS</span>
                       <span className="bg-pink-600 px-3 py-1 rounded-full text-sm font-semibold">✨ UI/UX</span>
                     </>

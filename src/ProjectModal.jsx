@@ -148,11 +148,11 @@ export default function ProjectModal({ project, isOpen, onClose, onPrev, onNext,
                       </span>
                     </div>
                     <p className="text-gray-300 text-base font-medium">
-                      {project.title === "Mine Rescue" && "Mobile Puzzle Game • Unity + Firebase"}
-                      {project.title === "BattleBay" && "Multiplayer Battle Arena • Unity + CI/CD"}
-                      {project.title === "Yoga Quest" && "Match-3 Yoga Game • Unity + Zenject"}
-                      {project.title === "Survive The Dead" && "Zombie Survival FPS • Unity + AI"}
-                      {project.title === "Laser Defender" && "Classic Space Shooter • Unity + 2D Physics"}
+                      {project.title === "Mine Rescue" && "Mobile Puzzle Game • Unity • Firebase"}
+                      {project.title === "BattleBay" && "Multiplayer Battle Arena • Unity • CI/CD"}
+                      {project.title === "Yoga Quest" && "Match-3 Game • Unity • Zenject"}
+                      {project.title === "Survive The Dead" && "Zombie Survival FPS • Unity • Navmesh"}
+                      {project.title === "Laser Defender" && "Classic Space Shooter • Unity • 2D Physics"}
                     </p>
                   </div>
                   
@@ -232,7 +232,6 @@ export default function ProjectModal({ project, isOpen, onClose, onPrev, onNext,
                         <span className="bg-blue-600 px-3 py-1 rounded-full text-sm font-semibold hover:bg-blue-500 transition-colors">💻 Unity</span>
                         <span className="bg-green-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-green-500 transition-colors">🎮 C#</span>
                         <span className="bg-orange-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-orange-500 transition-colors">🔥 Firebase</span>
-                        <span className="bg-purple-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-purple-500 transition-colors">📊 GameAnalytics</span>
                         <span className="bg-pink-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-pink-500 transition-colors">✨ UI/UX</span>
                       </>
                     )}
@@ -242,7 +241,6 @@ export default function ProjectModal({ project, isOpen, onClose, onPrev, onNext,
                         <span className="bg-green-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-green-500 transition-colors">🎮 C#</span>
                         <span className="bg-yellow-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-yellow-500 transition-colors">🚀 Jenkins</span>
                         <span className="bg-indigo-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-indigo-500 transition-colors">⚡ CI/CD</span>
-                        <span className="bg-cyan-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-cyan-500 transition-colors">🎪 PlayFab</span>
                       </>
                     )}
                     {project.title === "Yoga Quest" && (
@@ -258,7 +256,7 @@ export default function ProjectModal({ project, isOpen, onClose, onPrev, onNext,
                       <>
                         <span className="bg-blue-600 px-3 py-1 rounded-full text-sm font-semibold hover:bg-blue-500 transition-colors">💻 Unity</span>
                         <span className="bg-green-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-green-500 transition-colors">🎮 C#</span>
-                        <span className="bg-red-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-red-500 transition-colors">🤖 AI</span>
+                        <span className="bg-red-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-red-500 transition-colors">🤖 Enemy AI</span>
                         <span className="bg-purple-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-purple-500 transition-colors">🎯 FPS</span>
                         <span className="bg-pink-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-pink-500 transition-colors">✨ UI/UX</span>
                       </>
