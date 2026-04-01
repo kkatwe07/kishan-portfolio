@@ -5,28 +5,11 @@ import ProjectModal from "./ProjectModal";
 export default function KishanPortfolio() {
   const projects = [
     {
-      title: "Mine Rescue",
-      description:
-        "Worked on client-side features, UI polish, and gameplay additions. Helped design a new game mode and supported live updates.",
-      link: "https://play.google.com/store/apps/details?id=com.carry1st.minerescue",
-      detailedRole: "As a Unity developer on Mine Rescue, I was responsible for implementing core gameplay mechanics including the mining system, resource management, and player progression. I worked closely with the design team to balance game difficulty and create engaging user experiences. My contributions included optimizing performance for mobile devices, implementing analytics tracking, and maintaining code quality through regular refactoring.",
-      images: [
-        "/projects/mine_rescue/MR_1.png",
-        "/projects/mine_rescue/MR_2.png",
-        "/projects/mine_rescue/MR_3.png",
-        "/projects/mine_rescue/MR_4.png",
-        "/projects/mine_rescue/MR_5.png",
-      ],
-      videos: [
-        "https://www.youtube.com/embed/exx4lkuNlB0"
-      ]
-    },
-    {
       title: "BattleBay",
       description:
-        "Supporting client/server work, release processes, and event creation. Collaborating closely with designers and engineers.",
+        "Worked on live game systems across client and server, handling releases, events, and gameplay-related updates in an active multiplayer environment.",
       link: "https://battlebay.net/",
-      detailedRole: "In BattleBay, I focused on multiplayer networking and real-time gameplay synchronization. I implemented the client-server communication protocol, handled player matchmaking, and optimized network performance for smooth gameplay. I also contributed to the event system, creating dynamic in-game events that kept players engaged. My work involved debugging complex multiplayer issues and ensuring cross-platform compatibility.",
+      detailedRole: "In Battlebay, I worked on both client and server-side systems, focusing on keeping the game stable while shipping new features and updates. A big part of my role was around live ops. Setting up events, managing releases, and making sure updates go out smoothly without breaking existing systems. Since it is a live game, even small changes matter, so I spent a lot of time debugging issues, coordinating with QA, and making sure builds were stable. I also worked closely with designers and other developers to roll out features and respond quickly when something needed fixing.",
       images: [
         "/projects/battlebay/BB_1.png",
         "/projects/battlebay/BB_2.png",
@@ -39,11 +22,28 @@ export default function KishanPortfolio() {
       ]
     },
     {
+      title: "Mine Rescue",
+      description:
+        "Worked on client-side features, UI polish, and gameplay additions. Helped design a new game mode and supported live updates.",
+      link: "https://play.google.com/store/apps/details?id=com.carry1st.minerescue",
+      detailedRole: "I worked on client-side gameplay features in Mine Rescue, focusing on improving how the game feels during play. This included adding a new game mode, refining existing systems, and making UI interactions more responsive. A lot of the work was iterative. Fixing bugs, polishing feedback, and making small improvements that add up to a smoother experience.",
+      images: [
+        "/projects/mine_rescue/MR_1.png",
+        "/projects/mine_rescue/MR_2.png",
+        "/projects/mine_rescue/MR_3.png",
+        "/projects/mine_rescue/MR_4.png",
+        "/projects/mine_rescue/MR_5.png",
+      ],
+      videos: [
+        "https://www.youtube.com/embed/exx4lkuNlB0"
+      ]
+    },
+    {
       title: "Yoga Quest",
       description:
         "Core contributor to gameplay + UI. Used Zenject for architecture. Helped set up CI/CD and align development with design goals.",
       link: "https://play.google.com/store/apps/details?id=com.lb.m3.yoga",
-      detailedRole: "As a core developer on Yoga Quest, I implemented the match-3 puzzle mechanics and yoga-themed gameplay elements. I used Zenject for dependency injection to create a clean, maintainable architecture. I was responsible for the UI/UX implementation, ensuring smooth animations and intuitive user interactions. I also set up the CI/CD pipeline for automated testing and deployment, which significantly improved our development workflow.",
+      detailedRole: "As a core developer on Yoga Quest, I worked on the match-3 puzzle mechanics and the yoga-themed gameplay. I used Zenject to inject dependencies and make an architecture that is easy to read and maintain. I was in charge of the UI/UX implementation, making sure that animations worked smoothly and that users could easily understand how to use the app. I also set up the CI/CD pipeline for automated testing and deployment, which made our development process a lot better.",
       images: [
         "/projects/yoga_quest/YQ_1.png",
         "/projects/yoga_quest/YQ_2.png",
@@ -179,9 +179,9 @@ export default function KishanPortfolio() {
           <div className="text-xl text-blue-300 font-semibold mt-2 tracking-wide">
             Unity Game Developer
           </div>
-          <div className="text-lg text-gray-300 mt-1 font-light tracking-wider">
+          {/* <div className="text-lg text-gray-300 mt-1 font-light tracking-wider">
             Associate Software Engineer at Longbow Games
-          </div>
+          </div> */}
         </motion.div>
 
         {/* About Section */}
@@ -196,11 +196,11 @@ export default function KishanPortfolio() {
               Hi, I'm <span className="text-blue-400">Kishan</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed mb-4 font-light">
-              A <span className="text-blue-400 font-semibold">Unity Developer</span> with 2+ years of experience 
-              building polished mobile & live-ops games. I love turning game ideas into smooth, engaging player experiences.
+              A <span className="text-blue-400 font-semibold">Unity Game Developer</span> with 3+ years of experience in developing live/in-development mobile games. 
+              I enjoy working on gameplay systems, refining the UI, and squashing the kinds of bugs users actually care about.
             </p>
             <p className="text-gray-400 text-sm font-medium tracking-wide">
-              Currently working as Associate Software Engineer at Longbow Games
+              Currently building and refining game systems, while looking for the next opportunity to work on impactful game projects
             </p>
           </div>
         </motion.div>
@@ -235,51 +235,47 @@ export default function KishanPortfolio() {
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                <span className="text-gray-400 text-sm font-semibold">2023–Present</span>
+                <span className="text-gray-400 text-sm font-semibold">April 2023 - March 2026</span>
               </div>
-              <span className="bg-blue-600 px-3 py-1 rounded-full text-xs font-bold">
+              {/* <span className="bg-blue-600 px-3 py-1 rounded-full text-xs font-bold">
                 Current
-              </span>
+              </span> */}
             </div>
             
             <h3 className="text-2xl font-bold text-white mb-2">Associate Software Engineer</h3>
             <p className="text-gray-300 mb-3 text-lg">Longbow Games</p>
             <div className="text-gray-400 text-base space-y-3">
               <p>
-                🎮 <span className="text-white font-semibold">Full-Stack Game Development : </span> 
-                Built both client and server-side Unity features for major studios like Carry1st and Rovio Entertainment
+                🎮 <span className="text-white font-semibold">Game Development : </span> 
+                Worked on both client and server-side systems in Unity for live mobile games. I focused on gameplay features, user interfaces, and systems that players interact with.
               </p>
               <p>
-                👥 <span className="text-white font-semibold">Team Leadership : </span> 
-                Led small development teams (3-5 members), collaborating with Game Designers, Artists, QA, and Data Analysts for smooth feature delivery
+                🚀 <span className="text-white font-semibold">Live Ops : </span>
+                Handled live ops workflows like setting up events, fine-tuning features, and coordinating releases to make sure updates went smoothly and on time.
               </p>
               <p>
-                🚀 <span className="text-white font-semibold">Release Management : </span> 
-                Managed release cycles and CI/CD pipelines for consistent internal and external build distribution
+                🧠 <span className="text-white font-semibold">Architecture : </span>  
+                Used Zenject and structured patterns to make systems that are easy to maintain, scale, and change.
               </p>
               <p>
-                ☁️ <span className="text-white font-semibold">Cloud Infrastructure : </span> 
-                Maintained and administered AWS EC2 environments to support scalable build and deployment processes
-              </p>
-              <p>
-                📊 <span className="text-white font-semibold">Analytics Integration : </span> 
-                Integrated Firebase and GameAnalytics to track user behavior and support data-informed design decisions
-              </p>
-              <p>
-                🏗️ <span className="text-white font-semibold">Architecture & Code Quality : </span> 
-                Applied MVC architecture and Zenject for structured, maintainable Unity codebases
-              </p>
-              <p>
-                ✨ <span className="text-white font-semibold">Feature Development : </span> 
-                Contributed to 5+ game features that increased player engagement and monetization
+                👥 <span className="text-white font-semibold">Team Work : </span>
+                Worked closely with designers, artists, QA, and data teams to turn ideas into real features.
               </p>
               <p>
                 🔧 <span className="text-white font-semibold">Code Optimization : </span> 
                 Refactored legacy codebases to improve maintainability and performance
               </p>
               <p>
+                ✨ <span className="text-white font-semibold">Feature Development : </span> 
+                Worked on multiple gameplay features and improvements across live and in-development games
+              </p>
+              <p>
                 🎯 <span className="text-white font-semibold">Live Game Support : </span> 
                 Provided ongoing support including bug fixes, optimizations, and monthly update rollouts
+              </p>
+              <p>
+                ⚙️ <span className="text-white font-semibold">Pipeline Support : </span>
+                Set up CI/CD pipelines and AWS to make deployments easier and releases go more smoothly.
               </p>
             </div>
           </motion.div>
@@ -305,16 +301,16 @@ export default function KishanPortfolio() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             {
-              category: "Programming Languages",
-              skills: ["C#", "C++", "Java", "Python"]
-            },
-            {
               category: "Game Development",
-              skills: ["Unity", "Zenject", "MVC Architecture", "Game Design"]
+              skills: ["Unity", "Gameplay Systems", "UI/UX (Unity UI)", "Live Ops", "Game Optimization", "Debugging"]
             },
             {
-              category: "Tools & Services",
-              skills: ["GitHub", "Jenkins", "AWS EC2", "PlayFab", "Firebase", "GameAnalytics"]
+              category: "Architecture & Code",
+              skills: ["C#", "Zenject", "MVC Architecture", "Clean Code", "System Design"]
+            },
+            {
+              category: "Tools & Backend",
+              skills: ["Git", "Jenkins", "CI/CD", "AWS EC2", "PlayFab", "Firebase", "GameAnalytics"]
             }
           ].map((category, categoryIndex) => (
             <motion.div
@@ -425,8 +421,8 @@ export default function KishanPortfolio() {
                 {/* Project Card Header */}
                 <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-blue-600 to-purple-600 h-1"></div>
                 <div className="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded-full font-bold">
-                  {projects[current].title === "Mine Rescue" && "Professional"}
                   {projects[current].title === "BattleBay" && "Professional"}
+                  {projects[current].title === "Mine Rescue" && "Professional"}
                   {projects[current].title === "Yoga Quest" && "Professional"}
                   {projects[current].title === "Survive The Dead" && "Personal"}
                   {projects[current].title === "Laser Defender" && "Personal"}
@@ -443,16 +439,16 @@ export default function KishanPortfolio() {
                   </h3>
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-blue-300 text-sm font-semibold tracking-wide">
-                      {projects[current].title === "Mine Rescue" && "Longbow Games"}
                       {projects[current].title === "BattleBay" && "Longbow Games"}
+                      {projects[current].title === "Mine Rescue" && "Longbow Games"}
                       {projects[current].title === "Yoga Quest" && "Longbow Games"}
                       {projects[current].title === "Survive The Dead" && "Personal Project"}
                       {projects[current].title === "Laser Defender" && "Personal Project"}
                     </span>
                   </div>
                   <p className="text-gray-300 text-sm font-medium tracking-wide">
-                    {projects[current].title === "Mine Rescue" && "Mobile Puzzle Game • Unity • Firebase"}
                     {projects[current].title === "BattleBay" && "Multiplayer Battle Arena • Unity • CI/CD"}
+                    {projects[current].title === "Mine Rescue" && "Mobile Puzzle Game • Unity • Firebase"}
                     {projects[current].title === "Yoga Quest" && "Match-3 Game • Unity • Zenject"}
                     {projects[current].title === "Survive The Dead" && "Zombie Survival FPS • Unity • Navmesh"}
                     {projects[current].title === "Laser Defender" && "Classic Space Shooter • Unity • 2D Physics"}
@@ -472,20 +468,20 @@ export default function KishanPortfolio() {
                   <div className="text-sm text-gray-400 font-light leading-relaxed">
                     <div className="font-semibold text-yellow-400 mb-1">Key Contributions:</div>
                     <ul className="list-disc list-inside space-y-1">
-                      {projects[current].title === "Mine Rescue" && (
-                        <>
-                          <li>Designed and implemented new game mode</li>
-                          <li>UI tweaks for feedback & responsiveness</li>
-                          <li>Integrated Firebase & GameAnalytics</li>
-                          <li>Regular bug fixes & optimizations</li>
-                        </>
-                      )}
                       {projects[current].title === "BattleBay" && (
                         <>
                           <li>Managed release processes (CI/CD, Jenkins)</li>
                           <li>Created live events using internal deployer tools</li>
                           <li>Day-to-day debugging & feature rollouts</li>
                           <li>Client/server-side development</li>
+                        </>
+                      )}
+                      {projects[current].title === "Mine Rescue" && (
+                        <>
+                          <li>Designed and implemented new game mode</li>
+                          <li>UI tweaks for feedback & responsiveness</li>
+                          <li>Integrated Firebase & GameAnalytics</li>
+                          <li>Regular bug fixes & optimizations</li>
                         </>
                       )}
                       {projects[current].title === "Yoga Quest" && (
@@ -523,20 +519,20 @@ export default function KishanPortfolio() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.4 }}
                 >
-                  {projects[current].title === "Mine Rescue" && (
-                    <>
-                      <span className="bg-blue-600 px-3 py-1 rounded-full text-sm font-semibold">💻 Unity</span>
-                      <span className="bg-green-600 px-3 py-1 rounded-full text-sm font-semibold">🎮 C#</span>
-                      <span className="bg-orange-600 px-3 py-1 rounded-full text-sm font-semibold">🔥 Firebase</span>
-                      <span className="bg-pink-600 px-3 py-1 rounded-full text-sm font-semibold">✨ UI/UX</span>
-                    </>
-                  )}
                   {projects[current].title === "BattleBay" && (
                     <>
                       <span className="bg-blue-600 px-3 py-1 rounded-full text-sm font-semibold">💻 Unity</span>
                       <span className="bg-green-600 px-3 py-1 rounded-full text-sm font-semibold">🎮 C#</span>
                       <span className="bg-yellow-600 px-3 py-1 rounded-full text-sm font-semibold">🚀 Jenkins</span>
                       <span className="bg-indigo-600 px-3 py-1 rounded-full text-sm font-semibold">⚡ CI/CD</span>
+                    </>
+                  )}
+                  {projects[current].title === "Mine Rescue" && (
+                    <>
+                      <span className="bg-blue-600 px-3 py-1 rounded-full text-sm font-semibold">💻 Unity</span>
+                      <span className="bg-green-600 px-3 py-1 rounded-full text-sm font-semibold">🎮 C#</span>
+                      <span className="bg-orange-600 px-3 py-1 rounded-full text-sm font-semibold">🔥 Firebase</span>
+                      <span className="bg-pink-600 px-3 py-1 rounded-full text-sm font-semibold">✨ UI/UX</span>
                     </>
                   )}
                   {projects[current].title === "Yoga Quest" && (
