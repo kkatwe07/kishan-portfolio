@@ -244,39 +244,78 @@ export default function KishanPortfolio() {
             
             <h3 className="text-2xl font-bold text-white mb-2">Associate Software Engineer</h3>
             <p className="text-gray-300 mb-3 text-lg">Longbow Games</p>
-            <div className="text-gray-400 text-base space-y-3">
-              <p>
-                🎮 <span className="text-white font-semibold">Game Development : </span> 
-                Worked on both client and server-side systems in Unity for live mobile games. I focused on gameplay features, user interfaces, and systems that players interact with.
-              </p>
-              <p>
-                🚀 <span className="text-white font-semibold">Live Ops : </span>
-                Handled live ops workflows like setting up events, fine-tuning features, and coordinating releases to make sure updates went smoothly and on time.
-              </p>
-              <p>
-                🧠 <span className="text-white font-semibold">Architecture : </span>  
-                Used Zenject and structured patterns to make systems that are easy to maintain, scale, and change.
-              </p>
-              <p>
-                👥 <span className="text-white font-semibold">Team Work : </span>
-                Worked closely with designers, artists, QA, and data teams to turn ideas into real features.
-              </p>
-              <p>
-                🔧 <span className="text-white font-semibold">Code Optimization : </span> 
-                Refactored legacy codebases to improve maintainability and performance
-              </p>
-              <p>
-                ✨ <span className="text-white font-semibold">Feature Development : </span> 
-                Worked on multiple gameplay features and improvements across live and in-development games
-              </p>
-              <p>
-                🎯 <span className="text-white font-semibold">Live Game Support : </span> 
-                Provided ongoing support including bug fixes, optimizations, and monthly update rollouts
-              </p>
-              <p>
-                ⚙️ <span className="text-white font-semibold">Pipeline Support : </span>
-                Set up CI/CD pipelines and AWS to make deployments easier and releases go more smoothly.
-              </p>
+            <div className="text-base space-y-5">
+              <div>
+                <div className="text-white font-semibold flex items-center gap-2">
+                  <span>🎮</span> <span>Game Development</span>
+                </div>
+                <p className="text-gray-400 mt-1 leading-relaxed">
+                  Worked on both client and server-side systems in Unity for live mobile games. I focused on gameplay features, user interfaces, and systems that players interact with.
+                </p>
+              </div>
+
+              <div>
+                <div className="text-white font-semibold flex items-center gap-2">
+                  <span>🚀</span> <span>Live Ops</span>
+                </div>
+                <p className="text-gray-400 mt-1 leading-relaxed">
+                  Handled live ops workflows like setting up events, fine-tuning features, and coordinating releases to make sure updates went smoothly and on time.
+                </p>
+              </div>
+
+              <div>
+                <div className="text-white font-semibold flex items-center gap-2">
+                  <span>🧠</span> <span>Architecture</span>
+                </div>
+                <p className="text-gray-400 mt-1 leading-relaxed">
+                  Used Zenject and structured patterns to make systems that are easy to maintain, scale, and change.
+                </p>
+              </div>
+
+              <div>
+                <div className="text-white font-semibold flex items-center gap-2">
+                  <span>👥</span> <span>Team Work</span>
+                </div>
+                <p className="text-gray-400 mt-1 leading-relaxed">
+                  Worked closely with designers, artists, QA, and data teams to turn ideas into real features.
+                </p>
+              </div>
+
+              <div>
+                <div className="text-white font-semibold flex items-center gap-2">
+                  <span>🔧</span> <span>Code Optimization</span>
+                </div>
+                <p className="text-gray-400 mt-1 leading-relaxed">
+                  Refactored legacy codebases to improve maintainability and performance
+                </p>
+              </div>
+
+              <div>
+                <div className="text-white font-semibold flex items-center gap-2">
+                  <span>✨</span> <span>Feature Development</span>
+                </div>
+                <p className="text-gray-400 mt-1 leading-relaxed">
+                  Worked on multiple gameplay features and improvements across live and in-development games
+                </p>
+              </div>
+
+              <div>
+                <div className="text-white font-semibold flex items-center gap-2">
+                  <span>🎯</span> <span>Live Game Support</span>
+                </div>
+                <p className="text-gray-400 mt-1 leading-relaxed">
+                  Provided ongoing support including bug fixes, optimizations, and monthly update rollouts
+                </p>
+              </div>
+
+              <div>
+                <div className="text-white font-semibold flex items-center gap-2">
+                  <span>⚙️</span> <span>Pipeline Support</span>
+                </div>
+                <p className="text-gray-400 mt-1 leading-relaxed">
+                  Set up CI/CD pipelines and AWS to make deployments easier and releases go more smoothly.
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
