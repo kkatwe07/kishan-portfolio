@@ -562,6 +562,7 @@ export default function KishanPortfolio() {
                     <>
                       <span className="bg-blue-600 px-3 py-1 rounded-full text-sm font-semibold">💻 Unity</span>
                       <span className="bg-green-600 px-3 py-1 rounded-full text-sm font-semibold">🎮 C#</span>
+                      <span className="bg-orange-600 px-3 py-1 rounded-full text-sm font-semibold">🔧 C++</span>
                       <span className="bg-yellow-600 px-3 py-1 rounded-full text-sm font-semibold">🚀 Jenkins</span>
                       <span className="bg-indigo-600 px-3 py-1 rounded-full text-sm font-semibold">⚡ CI/CD</span>
                     </>
